@@ -1,0 +1,40 @@
+h1{
+  padding: 100px 0 0;
+  font-weight: 100;
+  margin: 30px;
+  font-size: 70px;
+  border-bottom: 1px solid #ddd;
+
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 100px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 30px;
+}
+tbody tr:hover {
+  background-color: rgba(30,32,34, 0.5);
+}
+
+
+@media only screen and (max-width: 600px) {
+  table{
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1{
+    padding: 400px 0 0;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  td{
+    padding: 50px;
+    font-size: 20px;
+  }
+}

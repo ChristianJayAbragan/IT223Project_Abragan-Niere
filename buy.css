@@ -1,0 +1,91 @@
+.slideshow-container {
+      max-width: 50%;
+      margin: 120px 5%;
+      box-shadow: 1px 1px 5px black
+    }
+    body{
+      background: #9BA4B5;
+    }
+  
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+      box-shadow: 1px 1px 5px black;
+      border-radius: 10px;
+    }
+  
+    /* CSS styles for the slideshow animation */
+    .fade {
+      animation: fade 3s ease-in-out infinite;
+    }
+    .sub-container{
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: absolute;
+      right: 0;
+      top: 120px;
+      width: 35%;
+      padding: 10px;
+      margin-right: 5%;
+    }
+    .namePrice{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 3%;
+    }
+    .colors a{
+      margin: 5px;
+      display: inline-flex;
+      width: 50px;
+      padding: 25px;
+      border-radius: 70px;
+      box-shadow: inset 1px 1px 5px black;
+      border: 2px solid transparent;
+      cursor: pointer;
+      filter: brightness(0.7);
+    }
+      .colors a.active{
+        transition: 0s;
+      filter: brightness(1.0);
+    }
+    button{
+      margin-top: 10%;
+      background: #1E2022;
+      font-size: 25PX;
+      width: 150px;
+      border-radius: 20px;
+      color: rgba(255,255, 255, 0.5);
+    }
+    button:hover{
+      color: rgba(255,255, 255);
+    }
+
+    footer{
+      position: fixed;
+      bottom: 0;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fade {
+      0%, 100% {
+        opacity: 2;
+      }
+ 

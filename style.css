@@ -1,0 +1,293 @@
+*{
+	font-family: sans-serif;
+	color: #fff;
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	outline: 0; border: 0;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 1s linear;
+	list-style: none;
+	scroll-behavior: smooth;
+
+
+}
+body{
+	background: #1E2022;
+	background-image: url("background-textures.png");
+ 	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.navbar{
+	top: 0;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(82,97,107, 0.1);
+	display: flex;
+	text-align: center;
+	padding: 0rem 2%;
+	box-shadow: 1px 1px 5px black;
+
+
+
+}
+
+
+
+
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin-right: 20px;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.menu li a:hover {
+  color: #f2f2f2;
+}
+
+
+
+
+.navbar ul li a{
+	transition: 1s unset;
+	color: rgba(255, 255, 255, 0.7);
+}
+.navbar ul li a:hover{
+	transition: 0.1s unset;
+	color: #fff;
+}
+.navbar ul{
+	margin-top: 5px;
+	display: inline-flex;
+}
+.navbar ul li{
+	margin: 10px;
+	width: 90px;
+	padding: 10px;
+}
+
+
+
+
+
+/*sub-navigation phone*/
+.sub-Phone{
+	margin-bottom: -50px;
+	display: none;	
+	width: 10px;
+	text-align: center;
+}
+
+.sub-Phone ul{
+	gap: 6rem;
+	position: relative;
+	margin-bottom: 5px;
+}
+.sub-Phone ul li img{
+	width: 250%;
+}
+.Phone li:hover .sub-Phone{
+	display: block;
+}
+
+.sub-Phone ul li img:hover{
+	transform: translateY(-5px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.picture1 img{
+	width: 100%;
+	height: 10%;
+}
+.picture1 h1{
+	position: absolute;
+	margin: 200px 100px;
+	font-size: 60px;
+}
+.picture1 a{
+	position: absolute;
+	margin: 300px 100px;
+	font-size: 20px;
+}
+.picture1 span{
+	text-decoration: underline;
+}
+
+.main2{
+/*	background: #9BA4B5;*/
+	padding: 5px;
+	border: 1px solid black;
+}
+.picture2 img{
+	margin: 3% 0.6%;
+	border-radius: 15px;
+	filter: brightness(0.5); 
+}
+.picture2 img:hover{
+	filter: brightness(1);
+}
+
+
+
+
+/*.container {
+  max-width: 1300px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px black;
+}
+  
+.slider {
+  display: flex;
+  width: 200%;
+  animation: slide 10s infinite;
+}
+h4{
+	background-color: rgba(82,97,107);
+  font-size: 30px;
+  text-align: center;
+}
+
+  
+.slider img {
+   width: 100%;
+   height: auto;
+}
+  
+@keyframes slide {
+  0% {
+   transform: translateX(0);
+}
+  0% {
+   transform: translateX(-50%);
+}
+  100% {
+   transform: translateX(0);
+	}
+}*/
+ 
+
+
+
+
+
+
+
+footer{
+	margin: 3% 6%;
+	text-align: center;
+
+}
+footer ul h2{
+	padding: 0px 0px 2% 0px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #fff;
+}
+footer ul li{
+	margin-top: 5%;
+}
+footer ul li a{
+	font-size: 50px;
+}
+footer ul h3{
+	padding: 0 70px;
+	margin-top: 2%;
+	font-size: medium;
+	font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .navbar ul li{
+  	margin: 10px -20px;
+		width: 100px;
+		padding: 10px;
+		font-size: 11px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sub-Phone ul li img{
+  	width: 150%;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .picture1 h1{
+  	margin: 90px 40px;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .picture1 a{
+  	margin: 125px 50px;
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  footer ul h2{
+  	font-size: 20px;
+  	padding: 0px 0px 5% 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer ul h3{
+  	padding: 0 50px;
+  	font-size: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer ul li a{
+  	font-size: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer ul li a{
+  	font-size: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .copyright a{
+  	font-size: 10px;
+  }
+}
+

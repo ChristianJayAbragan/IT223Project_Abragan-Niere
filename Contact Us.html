@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BUSINESS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="Contact Us.css">
+</head>
+<body>
+	<div class="navbar">
+
+		<div class="logo">
+			<a href="index.html"><img src="photos/LOGO.png" style=" width: 40px; margin: 10px;"></a>
+		</div>
+
+
+		
+		<ul>
+		<div class="Phone">
+			<li><a href="allproducts.html">Phone</a>
+				<div class="sub-Phone">
+				<ul>
+					<li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
+					<li><a href="android.html"><img src="photos/android.png"></a></li>
+				</ul>
+				</div>
+			</li>
+		</div>
+
+
+			<li><a href="reviews.html">Reviews</a></li>
+			<li><a href="About Us.html">About Us</a></li>
+			<li><a href="Contact Us.html" style="right: 20px; position: absolute;">Contact Us</a></li>
+		</ul>
+
+			
+	</div>
+
+
+<div class="container">
+    <h2>CONTACT US</h2>
+    <div class="border"></div>
+    <div class="map">
+      <img src="contacts/map.png">
+    <div class="overlay">
+      <ul>
+      <i class="fa-regular fa-envelope">Abragan_Christian@gmail.com</i>
+      <i class="fa-solid fa-location-dot">Zone 7, Bulua Divine Shepherd</i>
+      <i class="fa-solid fa-mobile-screen-button">(+63) 9674571203</i>
+      </ul>
+    </div>
+    </div>
+    <form action="contact.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required style="color: #fff;">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required style="color: #fff;">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group1">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <ul>
+      <h2 id="footer">About Us</h2>
+      <h3>C n' M is the by-product of a dream, vision, and multiple businesses that was once handled by brothers Maria and Christian Abragan. With remarkable passion and hardwork, both of them were able to reach out and highlight the youth in every person they came across and positively influence those who believe in what they do.</h3>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+      <div class="copyright"> 
+      <a href="" style="display: flex;">
+        Copyright© 2023-2024 C n' M. All rights reserved.
+      </a>
+      </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/c38120e78b.js" crossorigin="anonymous">
+  </script>
+	<script>
+    // JavaScript code for form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Fetch form values
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // Validate form fields (you can add your own validation logic here)
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields");
+        return;
+      }
+
+      // Process form data (you can send the data to a server-side script using AJAX or any other method)
+      // For demonstration, we'll just log the values to the console
+      console.log("Name: " + name);
+      console.log("Email: " + email);
+      console.log("Message: " + message);
+
+      // Clear form fields after submission
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+    });
+  </script>
+
+
+</body>
+</html>
