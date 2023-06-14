@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BUSINESS</title>
+  <link rel="icon" type="image/x-icon" href="photos/LOGO.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="buy.css">
   <link rel="stylesheet" type="text/css" href="table.css">
   <title>Hovering Images</title>
 </head>
+
 <body>
   <div class="navbar">
-
     <div class="logo">
-      <a href="index.html"><img src="photos/LOGO.png" style=" width: 40px; margin: 10px;"></a>
+      <a href="index.html"><img src="photos/LOGO.png"></a>
+      <h1>C N' M<br>Phone Access</h1>
     </div>
 
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <div class="Phone">
+        <li><a href="allproducts.html">Phone</a>
+          <div class="sub-Phone">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
+              <li><a href="android.html"><img src="photos/android.png"></a></li>
 
-    
-    <ul>
-    <div class="Phone">
-      <li><a href="allproducts.html">Phone</a>
-        <div class="sub-Phone">
-        <ul>
-          <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
-          <li><a href="android.html"><img src="photos/android.png"></a></li>
-        </ul>
-        </div>
-      </li>
-    </div>
-
-
+            </ul>
+          </div>
+          <div class="phone-res">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone - Copy.png"></a></li>
+              <li><a href="android.html"><img src="photos/android - Copy.png"></a></li>
+            </ul>
+          </div>
+        </li>
+      </div>
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="About Us.html">About Us</a></li>
       <li><a href="Contact Us.html" style="right: 20px; position: absolute;">Contact Us</a></li>
     </ul>
 
-      
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+  <div class="back">
+    <a href="allproducts.html"><i class="fa-solid fa-arrow-left fa-bounce fa-2xl" style="color: #000;"></i></a>
   </div>
 
-  <div class="container1">
+  <div class="container">
     <div class="slideshow-container">
       <img class="fade" src="buy/iphone1.png" alt="Image 1">
       <img class="fade" src="buy/iphone2.png" alt="Image 2">
@@ -49,35 +62,36 @@
 
     <div class="sub-container">
       <div class="namePrice">
-            <h3>iPhone 14</h3>
-            <span>₱ 48,990.00</span>
+        <h3>iPhone 14</h3>
+        <span>₱ 4P8,990.00</span>
       </div>
-          <p>Released 2022, September 16</p>
-          <p>172g, 7.8mm thickness</p>
-          <p>iOS 16, up to iOS 16.4.1</p>
-          <p>128GB/256GB/512GB storage, no card slot</p>
-          <span>Cash On Delivery</span>
-          <span>| 1 Year Waranty</span>
-          <br>
-          <br>
-        <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <div class="colors">
-            <a style="background: #b4ddcb;"></a>
-            <a style="background: #cdc5da;"></a>
-            <a style="background: #e8dc94;"></a>
-            <a style="background: #e9ebe9;"></a>
-            <a style="background: #2e2e2e;"></a>
-            <a style="background: #d00e2b;"></a>
-        </div>
-        <button>Buy Now</button>
-        <button>Add To Cart</button>
-        
+      <p>Released 2022, September 16</p>
+      <p>172g, 7.8mm thickness</p>
+      <p>iOS 16, up to iOS 16.4.1</p>
+      <p>128GB/256GB/512GB storage, no card slot</p>
+      <span>Cash On Delivery</span>
+      <span>| 1 Year Waranty</span>
+      <br>
+      <br>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="colors">
+        <a style="background: #b4ddcb;"></a>
+        <a style="background: #cdc5da;"></a>
+        <a style="background: #e8dc94;"></a>
+        <a style="background: #e9ebe9;"></a>
+        <a style="background: #2e2e2e;"></a>
+        <a style="background: #d00e2b;"></a>
+      </div>
+      <span><a class="stock">Out Of Stock<br>On Maintenance</a></span>
+      <button>Buy Now</button>
+      <button>Add To Cart</button>
+
     </div>
 
   </div>
@@ -86,82 +100,75 @@
 
 
     <tbody>
-      <h1>SPECIFICATIONS</h1>
+      <h1 id="specifications">SPECIFICATIONS</h1>
       <tr>
         <td>Display</td>
         <td>Super Retina XDR display<br>
-            6.1‑inch (diagonal) all‑screen OLED display<br>
-            2532‑by‑1170-pixel resolution at 460 ppi</td>
+          6.1‑inch (diagonal) all‑screen OLED display<br>
+          2532‑by‑1170-pixel resolution at 460 ppi</td>
       </tr>
       <tr>
         <td>Body</td>
         <td>Dimensions: 146.7 x 71.5 x 7.8 mm (5.78 x 2.81 x 0.31 in)<br>
-            Weight: 172 g (6.07 oz)<br>
-            Build: Glass front (Corning-made glass), glass back (Corning-made glass), aluminum frame<br>
-            SIM: Nano-SIM and eSIM - International<br> 
-            Dual eSIM with multiple numb  ers-USA<br>
-            Dual SIM (Nano-SIM, dual stand-by)-China<br>
-            IP68 dust/water resistant (up to 6m for 30 min)<br>
-            Apple Pay (Visa, MasterCard, AMEX certified)</td>
+          Weight: 172 g (6.07 oz)<br>
+          Build: Glass front (Corning-made glass), glass back (Corning-made glass), aluminum frame<br>
+          SIM: Nano-SIM and eSIM - International<br>
+          Dual eSIM with multiple numb ers-USA<br>
+          Dual SIM (Nano-SIM, dual stand-by)-China<br>
+          IP68 dust/water resistant (up to 6m for 30 min)<br>
+          Apple Pay (Visa, MasterCard, AMEX certified)</td>
       </tr>
       <tr>
         <td>Camera</td>
-        <td>12MP Main: 26mm, ƒ/1.5 aperture, sensor‑shift optical image stabilization, seven‑element lens,<br>    100% Focus Pixels<br>
-            12MP Ultra Wide: 13mm, ƒ/2.4 aperture and 120° field of view, five‑element lens<br>
-            2x optical zoom out; digital zoom up to 5x<br>
-            Sapphire crystal lens cover<br>
-            True Tone flash<br>
-            Photonic Engine<br>
-            Deep Fusion<br>
-            Smart HDR 4<br>
-            Portrait mode with advanced bokeh and Depth Control<br>
-            Portrait Lighting with six effects (Natural, Studio, Contour, Stage, Stage Mono, High‑Key Mono)<br>
-            Night mode<br>
-            Panorama (up to 63MP)<br>
-            Photographic Styles<br>
-            Wide color capture for photos and Live Photos<br>
-            Lens correction (Ultra Wide)<br>
-            Advanced red‑eye correction<br>
-            Auto image stabilization<br>
-            Burst mode<br>
-            Photo geotagging<br>
-            Image formats captured: HEIF and JPEG</td>
+        <td>12MP Main: 26mm, ƒ/1.5 aperture, sensor‑shift optical image stabilization, seven‑element lens,<br> 100%
+          Focus Pixels<br>
+          12MP Ultra Wide: 13mm, ƒ/2.4 aperture and 120° field of view, five‑element lens<br>
+          2x optical zoom out; digital zoom up to 5x<br>
+          Sapphire crystal lens cover<br>
+          True Tone flash<br>
+          Photonic Engine<br>
+          Deep Fusion<br>
+          Smart HDR 4<br>
+          Portrait mode with advanced bokeh and Depth Control<br>
+          Portrait Lighting with six effects (Natural, Studio, Contour, Stage, Stage Mono, High‑Key Mono)<br>
+          Night mode<br>
+          Panorama (up to 63MP)<br>
+          Photographic Styles<br>
+          Wide color capture for photos and Live Photos<br>
+          Lens correction (Ultra Wide)<br>
+          Advanced red‑eye correction<br>
+          Auto image stabilization<br>
+          Burst mode<br>
+          Photo geotagging<br>
+          Image formats captured: HEIF and JPEG</td>
       </tr>
       <tr>
         <td>Chipset</td>
         <td>A15 Bionic chip<br>
-            6‑core CPU with 2 performance and 4 efficiency cores<br>
-            5‑core GPU<br>
-            16‑core Neural Engine</td>
+          6‑core CPU with 2 performance and 4 efficiency cores<br>
+          5‑core GPU<br>
+          16‑core Neural Engine</td>
       </tr>
       <tr>
         <td>Battery</td>
         <td>Built-in rechargeable lithium-ion battery<br>
-            MagSafe wireless charging up to 15W10<br>
-            Qi wireless charging up to 7.5W10<br>
-            Charging via USB to computer system or power adapter</td>
+          MagSafe wireless charging up to 15W10<br>
+          Qi wireless charging up to 7.5W10<br>
+          Charging via USB to computer system or power adapter</td>
       </tr>
     </tbody>
   </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2023-2024 C n' M. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="https://kit.fontawesome.com/c38120e78b.js" crossorigin="anonymous">
   </script>
   <script type="text/javascript" src="index.js">
   </script>
 </body>
+
 </html>

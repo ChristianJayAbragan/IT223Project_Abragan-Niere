@@ -1,4 +1,4 @@
-h1{
+h1 {
   padding: 100px 0 0;
   font-weight: 100;
   margin: 30px;
@@ -6,6 +6,7 @@ h1{
   border-bottom: 1px solid #ddd;
 
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -17,23 +18,25 @@ td {
   border-bottom: 1px solid #ddd;
   font-size: 30px;
 }
+
 tbody tr:hover {
-  background-color: rgba(30,32,34, 0.5);
+  background-color: rgba(30, 32, 34, 0.5);
 }
 
 
 @media only screen and (max-width: 600px) {
-  table{
-  }
+  table {}
 }
+
 @media only screen and (max-width: 600px) {
-  h1{
+  h1 {
     padding: 400px 0 0;
     font-size: 30px;
   }
 }
+
 @media only screen and (max-width: 600px) {
-  td{
+  td {
     padding: 50px;
     font-size: 20px;
   }

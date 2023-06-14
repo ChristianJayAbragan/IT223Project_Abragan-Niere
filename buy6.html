@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BUSINESS</title>
+  <link rel="icon" type="image/x-icon" href="photos/LOGO.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="buy.css">
   <link rel="stylesheet" type="text/css" href="table.css">
   <title>Hovering Images</title>
 </head>
+
 <body>
-    <div class="navbar">
-
+  <div class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="photos/LOGO.png" style=" width: 40px; margin: 10px;"></a>
+      <a href="index.html"><img src="photos/LOGO.png"></a>
+      <h1>C N' M<br>Phone Access</h1>
     </div>
 
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <div class="Phone">
+        <li><a href="allproducts.html">Phone</a>
+          <div class="sub-Phone">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
+              <li><a href="android.html"><img src="photos/android.png"></a></li>
 
-    
-    <ul>
-    <div class="Phone">
-      <li><a href="allproducts.html">Phone</a>
-        <div class="sub-Phone">
-        <ul>
-          <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
-          <li><a href="android.html"><img src="photos/android.png"></a></li>
-        </ul>
-        </div>
-      </li>
-    </div>
-
-
+            </ul>
+          </div>
+          <div class="phone-res">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone - Copy.png"></a></li>
+              <li><a href="android.html"><img src="photos/android - Copy.png"></a></li>
+            </ul>
+          </div>
+        </li>
+      </div>
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="About Us.html">About Us</a></li>
       <li><a href="Contact Us.html" style="right: 20px; position: absolute;">Contact Us</a></li>
     </ul>
 
-      
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
   </div>
 
-  <div class="container1">
+  <div class="back">
+    <a href="allproducts.html"><i class="fa-solid fa-arrow-left fa-bounce fa-2xl" style="color: #000;"></i></a>
+  </div>
+
+  <div class="container">
     <div class="slideshow-container">
       <img class="fade" src="buy/Galaxy_s81.png" alt="Image 1">
       <img class="fade" src="buy/Galaxy_s82.png" alt="Image 2">
@@ -48,34 +62,35 @@
 
     <div class="sub-container">
       <div class="namePrice">
-            <h3>samsung s8+</h3>
-          <span>₱9,500.00</span>
+        <h3>samsung s8+</h3>
+        <span>₱9,500.00</span>
       </div>
-          <p>Released 2017, April</p>
-          <p>173g, 8.1mm thickness</p>
-          <p>173g, 8.1mm thickness</p>
-          <p>64GB/128GB storage, microSDXC</p>
-          <span>Cash On Delivery</span>
-          <span>| 1 Year Waranty</span>
-          <br>
-          <br>
-        <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <div class="colors">
-            <a style="background: #4f4c61;"></a>
-            <a style="background: #28292b;"></a>
-            <a style="background: #aeb2b5;"></a>
-            <a style="background: #779ac4;"></a>
-            <a style="background: #baa996;"></a>
-            <a style="background: #d7aeb2;"></a>
-        </div>
-        <button>Buy Now</button>
-        <button>Add To Cart</button>
+      <p>Released 2017, April</p>
+      <p>173g, 8.1mm thickness</p>
+      <p>173g, 8.1mm thickness</p>
+      <p>64GB/128GB storage, microSDXC</p>
+      <span>Cash On Delivery</span>
+      <span>| 1 Year Waranty</span>
+      <br>
+      <br>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="colors">
+        <a style="background: #4f4c61;"></a>
+        <a style="background: #28292b;"></a>
+        <a style="background: #aeb2b5;"></a>
+        <a style="background: #779ac4;"></a>
+        <a style="background: #baa996;"></a>
+        <a style="background: #d7aeb2;"></a>
+      </div>
+      <span><a class="stock">Out Of Stock<br>On Maintenance</a></span>
+      <button>Buy Now</button>
+      <button>Add To Cart</button>
     </div>
 
   </div>
@@ -84,63 +99,59 @@
 
 
     <tbody>
-      <h1>SPECIFICATIONS</h1>
+      <h1 id="specifications">SPECIFICATIONS</h1>
       <tr>
         <td>Display</td>
         <td>Super AMOLED<br>
-            6.2 inches, 98.3 cm2 (~84.0% screen-to-body ratio)<br>
-            1440 x 2960 pixels, 18.5:9 ratio (~529 ppi density)<br>
-            Corning Gorilla Glass 5</td>
+          6.2 inches, 98.3 cm2 (~84.0% screen-to-body ratio)<br>
+          1440 x 2960 pixels, 18.5:9 ratio (~529 ppi density)<br>
+          Corning Gorilla Glass 5</td>
       </tr>
       <tr>
         <td>Body</td>
         <td>159.5 x 73.4 x 8.1 mm (6.28 x 2.89 x 0.32 in)<br>
-            173 g (6.10 oz)<br>
-            Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame<br>
-            Single SIM (Nano-SIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)<br>
-            IP68 dust/water resistant (up to 1.5m for 30 min)</td>
+          173 g (6.10 oz)<br>
+          Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame<br>
+          Single SIM (Nano-SIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)<br>
+          IP68 dust/water resistant (up to 1.5m for 30 min)</td>
       </tr>
       <tr>
         <td>Camera</td>
         <td>MAIN CAMERA: 12 MP, f/1.7, 26mm (wide), 1/2.55", 1.4µm, dual pixel PDAF, OIS<br>
-            LED flash, auto-HDR, panorama<br>
-            SELFIE CAMERA: Dual  8 MP, f/1.7, 25mm (wide), 1/3.6", 1.22µm, AF<br>
-            2 MP (dedicated iris scanner camera)<br>
-            Features  Dual video call, Auto-HDR</td>
+          LED flash, auto-HDR, panorama<br>
+          SELFIE CAMERA: Dual 8 MP, f/1.7, 25mm (wide), 1/3.6", 1.22µm, AF<br>
+          2 MP (dedicated iris scanner camera)<br>
+          Features Dual video call, Auto-HDR</td>
       </tr>
       <tr>
         <td>Chipset</td>
         <td>Android 7.0 (Nougat), upgradable to Android 9.0 (Pie), One UI<br>
-            Exynos 8895 (10 nm) - EMEA<br>
-            MSM8998 Snapdragon 835 (10 nm) - USA & China<br>
-            Octa-core (4x2.3 GHz Mongoose M2 & 4x1.7 GHz Cortex-A53) - EMEA<br>
-            Octa-core (4x2.35 GHz Kryo & 4x1.9 GHz Kryo) - USA & China<br>
-            Mali-G71 MP20 - EMEA<br>
-            Adreno 540 - USA & China</td>
+          Exynos 8895 (10 nm) - EMEA<br>
+          MSM8998 Snapdragon 835 (10 nm) - USA & China<br>
+          Octa-core (4x2.3 GHz Mongoose M2 & 4x1.7 GHz Cortex-A53) - EMEA<br>
+          Octa-core (4x2.35 GHz Kryo & 4x1.9 GHz Kryo) - USA & China<br>
+          Mali-G71 MP20 - EMEA<br>
+          Adreno 540 - USA & China</td>
       </tr>
       <tr>
         <td>Battery</td>
         <td>Li-Ion 3500 mAh, non-removable (13.48 Wh)
-            15W wired, QC2
-            (Qi/PMA) (market dependent)</td>
+          15W wired, QC2
+          (Qi/PMA) (market dependent)</td>
       </tr>
     </tbody>
   </table>
 
-
-
-
-
-
-
-
-
-
-
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2023-2024 C n' M. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="https://kit.fontawesome.com/c38120e78b.js" crossorigin="anonymous">
   </script>
   <script type="text/javascript" src="index.js">
   </script>
 </body>
+
 </html>

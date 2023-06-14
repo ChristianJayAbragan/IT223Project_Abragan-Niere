@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BUSINESS</title>
+  <link rel="icon" type="image/x-icon" href="photos/LOGO.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="buy.css">
   <link rel="stylesheet" type="text/css" href="table.css">
   <title>Hovering Images</title>
 </head>
+
 <body>
   <div class="navbar">
-
     <div class="logo">
-      <a href="index.html"><img src="photos/LOGO.png" style=" width: 40px; margin: 10px;"></a>
+      <a href="index.html"><img src="photos/LOGO.png"></a>
+      <h1>C N' M<br>Phone Access</h1>
     </div>
 
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <div class="Phone">
+        <li><a href="allproducts.html">Phone</a>
+          <div class="sub-Phone">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
+              <li><a href="android.html"><img src="photos/android.png"></a></li>
 
-    
-    <ul>
-    <div class="Phone">
-      <li><a href="allproducts.html">Phone</a>
-        <div class="sub-Phone">
-        <ul>
-          <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
-          <li><a href="android.html"><img src="photos/android.png"></a></li>
-        </ul>
-        </div>
-      </li>
-    </div>
-
-
+            </ul>
+          </div>
+          <div class="phone-res">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone - Copy.png"></a></li>
+              <li><a href="android.html"><img src="photos/android - Copy.png"></a></li>
+            </ul>
+          </div>
+        </li>
+      </div>
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="About Us.html">About Us</a></li>
       <li><a href="Contact Us.html" style="right: 20px; position: absolute;">Contact Us</a></li>
     </ul>
 
-      
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
   </div>
 
-  <div class="container1">
+  <div class="back">
+    <a href="allproducts.html"><i class="fa-solid fa-arrow-left fa-bounce fa-2xl" style="color: #000;"></i></a>
+  </div>
+
+  <div class="container">
     <div class="slideshow-container">
       <img class="fade" src="buy/Vivo-V91.png" alt="Image 1">
       <img class="fade" src="buy/Vivo-V92.png" alt="Image 2">
@@ -48,31 +62,32 @@
 
     <div class="sub-container">
       <div class="namePrice">
-            <h3>Vivo v9</h3>
-            <span>₱ 2,705.00</span>
+        <h3>Vivo v9</h3>
+        <span>₱ 2,705.00</span>
       </div>
-          <p>Released 2018, April</p>
-          <p>150g, 7.9mm thickness</p>
-          <p>Android 8.1, Funtouch 4</p>
-          <p>64GB storage, microSDXC</p>
-          <span>Cash On Delivery</span>
-          <span>| 1 Year Waranty</span>
-          <br>
-          <br>
-        <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <div class="colors">
-            <a style="background: #a09287;"></a>
-            <a style="background: #1e2b3e;"></a>
-            <a style="background: #030504;"></a>
-        </div>
-        <button>Buy Now</button>
-        <button>Add To Cart</button>
+      <p>Released 2018, April</p>
+      <p>150g, 7.9mm thickness</p>
+      <p>Android 8.1, Funtouch 4</p>
+      <p>64GB storage, microSDXC</p>
+      <span>Cash On Delivery</span>
+      <span>| 1 Year Waranty</span>
+      <br>
+      <br>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="colors">
+        <a style="background: #a09287;"></a>
+        <a style="background: #1e2b3e;"></a>
+        <a style="background: #030504;"></a>
+      </div>
+      <span><a class="stock">Out Of Stock<br>On Maintenance</a></span>
+      <button>Buy Now</button>
+      <button>Add To Cart</button>
     </div>
 
   </div>
@@ -82,33 +97,34 @@
 
 
     <tbody>
-      <h1>SPECIFICATIONS</h1>
+      <h1 id="specifications">SPECIFICATIONS</h1>
       <tr>
         <td>Display</td>
         <td>IPS LCD<br>
-            6.3 inches, 99.1 cm2 (~85.2% screen-to-body ratio)<br>
-            1080 x 2280 pixels, 19:9 ratio (~400 ppi density)</td>
+          6.3 inches, 99.1 cm2 (~85.2% screen-to-body ratio)<br>
+          1080 x 2280 pixels, 19:9 ratio (~400 ppi density)</td>
       </tr>
       <tr>
         <td>Body</td>
         <td>Dimensions: 154.81×75.03×7.89mm<br>
-            Weight: 150g<br>
-            Sim: Card Slot<br>
-            2 Nano SIM and 1 microSD Card<br>
-          </td>
+          Weight: 150g<br>
+          Sim: Card Slot<br>
+          2 Nano SIM and 1 microSD Card<br>
+        </td>
       </tr>
       <tr>
         <td>Camera</td>
         <td>Front 24MP / Rear 16MP +5MP<br>
-            f2.0 (Front)/f2.0(Rear)<br>
-            Ultra HD, PPT, Professional, Slow, Time-Lapse Photography, Camera Filter, Live, Bokeh, HDR, AI Face Beauty, Panorama, 4K video, Palm capture, Gender detection, Retina Flash, AR Stickers</td>
+          f2.0 (Front)/f2.0(Rear)<br>
+          Ultra HD, PPT, Professional, Slow, Time-Lapse Photography, Camera Filter, Live, Bokeh, HDR, AI Face Beauty,
+          Panorama, 4K video, Palm capture, Gender detection, Retina Flash, AR Stickers</td>
       </tr>
       <tr>
         <td>Chipset</td>
         <td>8.1 (Oreo), Funtouch 4<br>
-            Qualcomm MSM8953-Pro Snapdragon 626 (14 nm)<br>
-            Octa-core 2.2 GHz Cortex-A53<br>
-            Adreno 506</td>
+          Qualcomm MSM8953-Pro Snapdragon 626 (14 nm)<br>
+          Octa-core 2.2 GHz Cortex-A53<br>
+          Adreno 506</td>
       </tr>
       <tr>
         <td>Battery</td>
@@ -117,18 +133,16 @@
     </tbody>
   </table>
 
-
-
-
-
-
-
-
-
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2023-2024 C n' M. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="https://kit.fontawesome.com/c38120e78b.js" crossorigin="anonymous">
   </script>
   <script type="text/javascript" src="index.js">
   </script>
 </body>
+
 </html>

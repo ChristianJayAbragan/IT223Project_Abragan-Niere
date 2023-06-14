@@ -1,123 +1,124 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="reviews.css">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="icon" type="image/x-icon" href="photos/LOGO.png">
+  <link rel="stylesheet" href="reviews.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+<body>
   <div class="navbar">
-
     <div class="logo">
-      <a href="index.html"><img src="photos/LOGO.png" style=" width: 40px; margin: 10px;"></a>
+      <a href="index.html"><img src="photos/LOGO.png"></a>
+      <h1>C N' M<br>Phone Access</h1>
     </div>
 
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <div class="Phone">
+        <li><a href="allproducts.html">Phone</a>
+          <div class="sub-Phone">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
+              <li><a href="android.html"><img src="photos/android.png"></a></li>
 
-    
-    <ul>
-    <div class="Phone">
-      <li><a href="allproducts.html">Phone</a>
-        <div class="sub-Phone">
-        <ul>
-          <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
-          <li><a href="android.html"><img src="photos/android.png"></a></li>
-        </ul>
-        </div>
-      </li>
-    </div>
-
-
+            </ul>
+          </div>
+          <div class="phone-res">
+            <ul>
+              <li><a href="iPhone.html"><img src="photos/iphone - Copy.png"></a></li>
+              <li><a href="android.html"><img src="photos/android - Copy.png"></a></li>
+            </ul>
+          </div>
+        </li>
+      </div>
       <li><a href="reviews.html">Reviews</a></li>
       <li><a href="About Us.html">About Us</a></li>
       <li><a href="Contact Us.html" style="right: 20px; position: absolute;">Contact Us</a></li>
     </ul>
 
-      
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
   </div>
 
 
 
-    <div class="testimonials">
-      <div class="inner">
-        <h1>REVIEWS</h1>
-        <div class="border"></div>
+  <div class="testimonials">
+    <div class="inner">
+      <h1>REVIEWS</h1>
+      <div class="border"></div>
 
-        <div class="row">
-          <div class="col">
-            <div class="testimonial">
-              <img src="reviews/p1.png" alt="">
-              <div class="name">C** ***o</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-
-              <p>
-                Very nice website.
-              </p>
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="reviews/p1.png" alt="">
+            <div class="name">C** ***o</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+
+            <p>
+              Very nice website.
+            </p>
           </div>
+        </div>
 
-          <div class="col">
-            <div class="testimonial">
-              <img src="reviews/p2.png" alt="">
-              <div class="name">E*** *******o</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-
-              <p>
-                This website is so very on point. And I think the owner of this website is so very handsome.
-              </p>
+        <div class="col">
+          <div class="testimonial">
+            <img src="reviews/p2.png" alt="">
+            <div class="name">E*** *******o</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+
+            <p>
+              This website is so very on point. And I think the owner of this website is so very handsome.
+            </p>
           </div>
+        </div>
 
-          <div class="col">
-            <div class="testimonial">
-              <img src="reviews/p3.png" alt="">
-              <div class="name">R****** ****a</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-
-              <p>
-                It's so very easy to use.
-              </p>
+        <div class="col">
+          <div class="testimonial">
+            <img src="reviews/p3.png" alt="">
+            <div class="name">R****** ****a</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+
+            <p>
+              It's so very easy to use.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
-<footer>
-    <ul>
-      <h2 id="footer">About Us</h2>
-      <h3>C n' M is the by-product of a dream, vision, and multiple businesses that was once handled by brothers Maria and Christian Abragan. With remarkable passion and hardwork, both of them were able to reach out and highlight the youth in every person they came across and positively influence those who believe in what they do.</h3>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </ul>
-      <div class="copyright"> 
-      <a href="" style="display: flex;">
-        Copyright© 2023-2024 C n' M. All rights reserved.
-      </a>
-      </div>
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2023-2024 C n' M. All rights reserved.</p>
+    </div>
   </footer>
+  <script type="text/javascript" src="index.js"></script>
+</body>
 
-  </body>
 </html>

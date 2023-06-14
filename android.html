@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BUSINESS</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="allproducts.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUSINESS</title>
+    <link rel="icon" type="image/x-icon" href="photos/LOGO.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="allproducts.css">
 </head>
+
 <body>
     <div class="navbar">
-
         <div class="logo">
-            <a href="index.html"><img src="photos/LOGO.png" style=" width: 40px; margin: 10px;"></a>
+            <a href="index.html"><img src="photos/LOGO.png"></a>
+            <h1>C N' M<br>Phone Access</h1>
         </div>
 
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <div class="Phone">
+                <li><a href="allproducts.html">Phone</a>
+                    <div class="sub-Phone">
+                        <ul>
+                            <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
+                            <li><a href="android.html"><img src="photos/android.png"></a></li>
 
-        
-        <ul>
-        <div class="Phone">
-            <li><a href="allproducts.html">Phone</a>
-                <div class="sub-Phone">
-                <ul>
-
-                    <li><a href="iPhone.html"><img src="photos/iphone.png"></a></li>
-                    
-                    <li><a href="android.html"><img src="photos/android.png"></a></li>
-
-                </ul>
-                </div>
-            </li>
-        </div>
-
-
+                        </ul>
+                    </div>
+                    <div class="phone-res">
+                        <ul>
+                            <li><a href="iPhone.html"><img src="photos/iphone - Copy.png"></a></li>
+                            <li><a href="android.html"><img src="photos/android - Copy.png"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </div>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="About Us.html">About Us</a></li>
             <li><a href="Contact Us.html" style="right: 20px; position: absolute;">Contact Us</a></li>
         </ul>
 
-            
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
     </div>
-	
- <div class="container">
+
+    <div class="container">
 
         <div class="header">
-            <img src="photos/android.png" style="width: 150px;"> 
+            <img src="photos/android.png" style="width: 150px;">
         </div>
         <div class="products">
-            
+
             <div class="product">
                 <div class="namePrice">
                     <h3>Vivo v9</h3>
@@ -54,24 +61,24 @@
                 <div class="image">
                     <img src="products/vivo-v9.png" alt="">
                 </div>
-            <div class="bay">
-                    <button><a href="">Learn more</a></button>
+                <div class="bay">
+                    <button><a href="buy4.html#specifications">Learn more</a></button>
                     <button><a href="buy4.html">buy now</a></button>
-            </div>
-            <div class="specs">
-                <p>Released 2018, April</p>
-                <p>150g, 7.9mm thickness</p>
-                <p>Android 8.1, Funtouch 4</p>
-                <p>64GB storage, microSDXC</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
                 </div>
-                <span>₱ 2,705.00</span>
-            </div>
+                <div class="specs">
+                    <p>Released 2018, April</p>
+                    <p>150g, 7.9mm thickness</p>
+                    <p>Android 8.1, Funtouch 4</p>
+                    <p>64GB storage, microSDXC</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span>₱ 2,705.00</span>
+                </div>
             </div>
 
             <div class="product">
@@ -79,27 +86,27 @@
                     <h3>One+ 3</h3>
                 </div>
                 <div class="image">
-                    <img src="products/OnePlus 3.png" alt="" >
+                    <img src="products/OnePlus 3.png" alt="">
                 </div>
-            <div class="bay">
-                    <button><a href="">Learn more</a></button>
+                <div class="bay">
+                    <button><a href="buy5.html#specifications">Learn more</a></button>
                     <button><a href="buy5.html">buy now</a></button>
-            </div>
-            <div class="specs">
-                
-                <p>Released 2016, June</p>
-                <p>158g, 7.4mm thickness</p>
-                <p>Android 6.0.1, up to Android 9.0</p>
-                <p>64GB storage, no card slot</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
                 </div>
-                <span>₱ 5,445.00</span>
-            </div>
+                <div class="specs">
+
+                    <p>Released 2016, June</p>
+                    <p>158g, 7.4mm thickness</p>
+                    <p>Android 6.0.1, up to Android 9.0</p>
+                    <p>64GB storage, no card slot</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span>₱ 5,445.00</span>
+                </div>
             </div>
 
             <div class="product">
@@ -107,26 +114,26 @@
                     <h3>samsung s8+</h3>
                 </div>
                 <div class="image">
-                    <img src="products/samsung-s8plus.png" alt="" >
+                    <img src="products/samsung-s8plus.png" alt="">
                 </div>
-            <div class="bay">
-                    <button><a href="">Learn more</a></button>
+                <div class="bay">
+                    <button><a href="buy6.html#specifications">Learn more</a></button>
                     <button><a href="buy6.html">buy now</a></button>
-            </div>
-            <div class="specs">
-                <p>Released 2017, April</p>
-                <p>173g, 8.1mm thickness</p>
-                <p>173g, 8.1mm thickness</p>
-                <p>64GB/128GB storage, microSDXC</p>
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
                 </div>
-                <span>₱9,500.00</span>
-            </div>
+                <div class="specs">
+                    <p>Released 2017, April</p>
+                    <p>173g, 8.1mm thickness</p>
+                    <p>173g, 8.1mm thickness</p>
+                    <p>64GB/128GB storage, microSDXC</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span>₱9,500.00</span>
+                </div>
             </div>
 
 
@@ -134,52 +141,19 @@
 
         </div>
     </div>
-    
 
 
 
 
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2023-2024 C n' M. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 	<footer>
-		
-		<ul>
-			<h2>About Us</h2>
-			<li><a>C n' M has never stopped moving forward and has continuously evolved by further cultivating their relationship with every individual alike and the community as a whole</a></li>
-			<h3>C n' M is the by-product of a dream, vision, and multiple businesses that was once handled by brothers Maria and Christian Abragan. With remarkable passion and hardwork, both of them were able to reach out and highlight the youth in every person they came across and positively influence those who believe in what they do.</h3>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-		</ul>
-	</footer>
-
-
-
- -->
-
-
-
-
-	<script src="https://kit.fontawesome.com/c38120e78b.js" crossorigin="anonymous">
-	</script>
-	<script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c38120e78b.js" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
 </body>
+
 </html>
