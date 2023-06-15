@@ -178,10 +178,18 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
+
+}
+
+h5 {
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  font-size: 50px;
 }
 
 .centered-table {
-  margin: 40px auto 0;
+  margin: 5px auto;
   text-align: center;
 }
 
@@ -202,8 +210,10 @@ body {
 }
 
 #displayed-image {
-  width: 40%;
+  width: 70%;
+  height: 600px;
   display: none;
+  border-radius: 20px;
   border: 2px solid rgba(82, 97, 107);
   box-shadow: 3px 3px 5px black;
 }
@@ -225,8 +235,13 @@ footer {
 }
 
 .footer-section1 {
-  font-size: 24px;
-  margin: 0 40px 40px 40px;
+  font-size: 14px;
+  margin: 20px 100px 40px 100px;
+}
+
+.footer-section1 .bold {
+  font-size: 50px;
+  margin: 20px;
 }
 
 .footer-section1 h2 {
@@ -291,6 +306,32 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+  .picture1 a {
+    margin: 125px 50px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h5 {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #displayed-image {
+    width: 97%;
+    height: 100%;
+    display: none;
+    border: 2px solid #fff;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
   .footer-section {
     flex: 1 0 30%;
     margin-bottom: 20px;
@@ -299,29 +340,14 @@ footer {
 
   }
 
-  .picture1 h1 {
-    margin: 90px 40px;
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .picture1 a {
-    margin: 125px 50px;
-    font-size: 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #displayed-image {
-    width: 100%;
-    display: none;
-    border: 2px solid #fff;
+  .footer-section1 .bold {
+    font-size: 30px;
   }
 
+  .footer-section1 {
+    margin: 20px 50px 40px 50px;
+  }
 }
-
-
 
 
 @media only screen and (max-width: 600px) {
